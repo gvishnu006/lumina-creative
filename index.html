@@ -24,7 +24,7 @@
       <nav class="nav-links" id="navLinks">
         <a href="#services">Services</a>
         <a href="#work">Work</a>
-        <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
         <a href="#contact" class="nav-cta">Get in Touch</a>
       </nav>
 
@@ -113,6 +113,13 @@
         <h2 class="section-title">Recent creations from the lab</h2>
       </div>
 
+      <div class="work-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web">Web Platforms</button>
+        <button class="filter-btn" data-filter="brand">Branding</button>
+        <button class="filter-btn" data-filter="interactive">Interactive 3D</button>
+      </div>
+
       <div class="work-grid" id="workGrid">
         <article class="work-card" data-category="web">
           <div class="work-preview preview-1">
@@ -143,9 +150,90 @@
             <p>Spatial audio visualizer powered by Web Audio API and custom shaders.</p>
           </div>
         </article>
+
+        <article class="work-card" data-category="web">
+          <div class="work-preview preview-4">
+            <span class="preview-tag">Web Platform</span>
+          </div>
+          <div class="work-info">
+            <h3>Hyperion Commerce</h3>
+            <p>Headless storefront processing thousands of checkout flows per minute.</p>
+          </div>
+        </article>
       </div>
     </div>
   </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Endorsements</p>
+        <h2 class="section-title">Loved by founders and engineering leads</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="quote">"Lumina transformed our product from a functional utility into an emotional, memorable experience. User engagement jumped 240% within the first month."</p>
+          <div class="author">
+            <div class="author-avatar">SC</div>
+            <div>
+              <div class="author-name">Sophia Chen</div>
+              <div class="author-role">VP Product, Solaria</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="quote">"The level of attention to motion design and micro-details is unmatched. They don't just ship code; they craft true digital craftsmanship."</p>
+          <div class="author">
+            <div class="author-avatar">MR</div>
+            <div>
+              <div class="author-name">Marcus Reed</div>
+              <div class="author-role">Founder, Kinetics Lab</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container contact-container">
+      <div class="contact-box">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <p class="section-tag">Let's Connect</p>
+          <h2 class="section-title">Ready to build something unforgettable?</h2>
+          <p style="color: var(--text-muted); margin-top: 0.5rem;">Drop us a note and we'll reply within 24 hours.</p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" required placeholder="Elena Vance">
+            </div>
+            <div class="form-group">
+              <label for="email">Work Email</label>
+              <input type="email" id="email" required placeholder="elena@company.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Project Overview</label>
+            <textarea id="message" rows="4" required placeholder="Tell us about your project, timeline, and goals..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">✓</span>
+    <span>Thank you! Your message has been sent successfully.</span>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
@@ -158,5 +246,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

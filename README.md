@@ -1,6 +1,6 @@
 # Lumina Creative Studio
 
-> Sleek, modern design & interactive studio website built with semantic HTML5, modern CSS3 variables, and responsive design systems.
+> Sleek, modern design & interactive studio website built with semantic HTML5, modern CSS3 variables, and vanilla JavaScript.
 
 ![Lumina Preview](https://img.shields.io/badge/status-live-success?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
@@ -8,9 +8,10 @@
 ## Features
 
 - **Fluid Dark Modern Aesthetic**: Cosmic ambient backdrops, subtle glassmorphism, and responsive typography.
-- **Accessible & Semantic**: Written with clean semantic tags and WCAG-compliant color contrast.
-- **Zero Heavy Dependencies**: Pure vanilla HTML and CSS for lightning-fast First Contentful Paint.
-- **Fluid Layout**: Designed mobile-first, expanding cleanly from smartphone screens up to 4K displays.
+- **Dynamic Category Filtering**: Live client-side project filter (All, Web Platforms, Branding, Interactive 3D).
+- **Interactive Counters & Testimonials**: Intersection-observer driven stat counter and responsive quotes grid.
+- **Accessible Contact Flow**: Interactive form state with simulated response and instant toast confirmation.
+- **Zero Heavy Dependencies**: Pure vanilla HTML, CSS, and JS for ultra-fast performance.
 
 ## Quick Start
 
